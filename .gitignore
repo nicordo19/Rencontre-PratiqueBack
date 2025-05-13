@@ -31,4 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
-node_modules/
+# Logs
+*.log
+# OS files
+.DS_Store
+Thumbs.db
