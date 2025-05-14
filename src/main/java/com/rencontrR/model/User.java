@@ -22,7 +22,7 @@ private String email;
   public User() {
   }
 
-public User(String firstname, String lastname, String password, String email, int age, LocalDate birthday, String orientation, LocalDate date_inscription) {
+public User(String firstname, String lastname, String password, String email) {
     this.firstname = firstname;
     this.lastname = lastname;
     this.password = password;
