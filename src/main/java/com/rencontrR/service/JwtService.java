@@ -1,4 +1,4 @@
-package com.rencontrR;
+package com.rencontrR.service;
 
 import io.jsonwebtoken.*; // Importe toutes les classes utiles de la librairie JWT
 import io.jsonwebtoken.security.Keys; // Permet de générer une clé secrète avec HMAC (utilisée pour signer le token
@@ -8,12 +8,8 @@ import java.security.Key;
 import java.util.Date; // Sert à gérer les dates d’expiration
 import java.util.function.Function; // Utilisé pour extraire dynamiquement des informations du token (comme l’email)
 
-import static javax.crypto.Cipher.SECRET_KEY;
 
-
-
-
-  @Service
+@Service
   public class JwtService {
 // créer notre Clé secret pour notre signature et pui on lui donne une durée de vie de 24h
     private static final String SECRET_KEY = "TunNeTrouveraPasMonPswTuPeuxToujoursChercher@Tainul:D";
